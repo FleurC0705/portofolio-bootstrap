@@ -1,0 +1,125 @@
+
+:root {
+    --primary-yellow: #ffc107;
+    --soft-yellow: #fff4e6;
+    --light-bg: #f8f9fa;
+    --border-color: #eee;
+}
+
+.transition {
+    transition: all 0.3s ease-in-out;
+}
+
+
+.hero, .cv-header, .experience-header {
+    padding: 80px 0;
+    background: radial-gradient(circle at 90% 10%, var(--soft-yellow) 0%, #ffffff 40%);
+}
+
+.cv-header {
+    padding: 80px 0 40px 0;
+    background: radial-gradient(circle at 50% 0%, var(--soft-yellow) 0%, #ffffff 70%);
+}
+
+.hero h1 {
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.10);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    filter: grayscale(60%);
+    opacity: 0.8;
+    transition: all 0.5s ease;
+}
+
+.card:hover .card-img-top {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.skill-card { 
+    background: var(--light-bg); 
+    padding: 30px 20px; 
+    border-radius: 20px; 
+    text-align: center; 
+    margin: 15px; 
+    border: 1px solid var(--border-color); 
+    transition: 0.3s; 
+}
+
+.skill-card:hover { 
+    border-color: var(--primary-yellow); 
+    background: #fff; 
+    transform: translateY(-5px); 
+}
+
+.skill-card img { 
+    height: 70px; 
+    margin: 0 auto 15px; 
+    display: block; 
+    object-fit: contain; 
+}
+
+
+.slick-prev:before, .slick-next:before { 
+    color: #000 !important; 
+    font-size: 24px; 
+}
+
+.carousel-item img {
+    height: 450px;
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+.carousel-item:hover img {
+    filter: grayscale(0%) sepia(0%);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 15px;
+    bottom: 30px;
+}
+
+.bi-yellow {
+    color: var(--primary-yellow);
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.form-control, .form-select {
+    border-radius: 12px;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    background-color: #fcfcfc;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-yellow);
+    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.1);
+}
+.hero {
+    padding: 120px 0; 
+    background: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
